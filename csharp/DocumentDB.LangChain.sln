@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentDB.LangChain", "src\DocumentDB.LangChain\DocumentDB.LangChain.csproj", "{9FEAC922-760E-41CB-BD62-05050132563C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentDB.LangChain.Tests", "tests\DocumentDB.LangChain.Tests\DocumentDB.LangChain.Tests.csproj", "{8E5D7152-F655-468F-996F-CDAA75BFF47E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FEAC922-760E-41CB-BD62-05050132563C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FEAC922-760E-41CB-BD62-05050132563C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FEAC922-760E-41CB-BD62-05050132563C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FEAC922-760E-41CB-BD62-05050132563C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E5D7152-F655-468F-996F-CDAA75BFF47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5D7152-F655-468F-996F-CDAA75BFF47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5D7152-F655-468F-996F-CDAA75BFF47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5D7152-F655-468F-996F-CDAA75BFF47E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

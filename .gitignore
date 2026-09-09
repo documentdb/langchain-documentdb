@@ -1,0 +1,67 @@
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+dist/
+build/
+
+# Node.js and TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/
+coverage/
+*.tsbuildinfo
+
+# Go
+bin/
+*.test
+*.out
+vendor/
+
+# Java, Maven, and Gradle
+target/
+.gradle/
+*.class
+*.jar
+*.war
+*.ear
+
+# .NET
+[Bb]in/
+[Oo]bj/
+TestResults/
+*.user
+*.suo
+*.nupkg
+*.snupkg
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini

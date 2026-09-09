@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/documentdb/documentdb/security/policy
+    about: Follow the private reporting instructions; do not open a public issue.
+  - name: DocumentDB community questions
+    url: https://discord.gg/vH7bYu524D
+    about: Ask general DocumentDB questions in the community Discord.

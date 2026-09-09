@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "langchain-documentdb"
+version = "0.1.0"
+description = "DocumentDB vector store integration for LangChain"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "DocumentDB" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+dependencies = [
+  "langchain-core>=1.2,<2",
+  "numpy>=1.26,<3",
+  "pymongo>=4.9,<5",
+]
+
+[project.optional-dependencies]
+test = [
+  "langchain-tests>=1.1,<2",
+  "mypy>=1.17,<2",
+  "pytest>=8,<10",
+  "pytest-asyncio>=1,<2",
+  "pytest-cov>=6,<8",
+  "ruff>=0.12,<1",
+]
+
+[project.urls]
+Repository = "https://github.com/documentdb/langchain-documentdb"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/langchain_documentdb"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-config --strict-markers"
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+  "integration: tests requiring a live DocumentDB deployment",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["langchain_documentdb"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+packages = ["langchain_documentdb"]
