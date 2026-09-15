@@ -1,0 +1,4 @@
+java/mvnw text eol=lf
+java/**/*.java text eol=lf
+java/**/*.xml text eol=lf
+java/**/*.properties text eol=lf
